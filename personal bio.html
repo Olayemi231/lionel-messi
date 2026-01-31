@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Bio | Lionel Messi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark">
+<nav class="navbar">
+  <div class="nav-container">
+
+    <div class="logo">LIONEL MESSI</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Brands.html">Brands</a></li>
+      <li><a href="Videos.html">Videos</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<section class="bio-hero">
+  <div class="bio-hero-overlay">
+    <h1>Personal Bio</h1>
+  </div>
+</section>
+
+<section class="bio-section">
+  <div class="bio-container">
+
+    <div class="bio-image">
+      <img src="images/profile.jpeg" alt="Creator Profile Image">
+    </div>
+
+    <div class="bio-text">
+      <h2>Hello, I'm Olaa</h2>
+      <p>
+        My name is Toheeb Olayemi Ojurongbe. I am from Nigeria and studied at
+        Fountain University for my undergraduate degree, where I earned a
+        Bachelor's degree in Computer Science in 2023. I am passionate about
+        sports, especially football and athletics (running). My creative
+        interests include graphic design, user interface, and user experience
+        design, with Adobe XD and Adobe Photoshop being my preferred tools.
+        Although I do not particularly enjoy coding, I understand its
+        importance and use it when necessary. I began designing during my
+        undergraduate studies in 2021 and currently attend Griffith College
+        Dublin, where I am pursuing a Master’s degree in Applied Digital Media
+        as an international student. My favorite color is black, and as a
+        Barcelona fan, football brings me a lot of joy. I also hope to learn
+        more programming languages in the future.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <p>LIONEL MESSI © 2026</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="Personal Bio.html">Personal Bio</a>
+      <a href="References.html">References</a>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    document.body.classList.remove("dark");
+  } else {
+    document.body.classList.add("dark");
+  }
+</script>
+</body>
+</html>
