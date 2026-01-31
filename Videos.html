@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos | Lionel Messi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+<nav class="navbar">
+  <div class="nav-container">
+
+    <div class="logo">LIONEL MESSI</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Brands.html">Brands</a></li>
+      <li><a href="Videos.html" class="active">Videos</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<section class="videos-hero">
+  <div class="videos-hero-overlay">
+    <h1>Videos</h1>
+  </div>
+</section>
+
+<section class="videos-section">
+  <div class="videos-grid">
+
+    <div class="videos-card">
+      <iframe
+        src="https://www.youtube.com/embed/ZmKy_fnRM_E"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="videos-card">
+      <iframe
+        src="https://www.youtube.com/embed/jqlxti9oYzw"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="videos-card">
+      <iframe
+        src="https://www.youtube.com/embed/nA8wHQvHPJU"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="videos-card">
+      <iframe
+        src="https://www.youtube.com/embed/kSW2OE72Af0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="videos-card">
+      <iframe
+        src="https://www.youtube.com/embed/rAO8xk2l05Q"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="videos-card">
+      <iframe
+        src="https://www.youtube.com/embed/DdoaU-r_HRk"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <p>LIONEL MESSI © 2026</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="Personal Bio.html">Personal Bio</a>
+      <a href="References.html">References</a>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    document.body.classList.remove("dark");
+  } else {
+    document.body.classList.add("dark");
+  }
+</script>
+
+</body>
+</html>

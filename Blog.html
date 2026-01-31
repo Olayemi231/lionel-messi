@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog | Lionel Messi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+<nav class="navbar">
+  <div class="nav-container">
+
+    <div class="logo">LIONEL MESSI</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Brands.html">Brands</a></li>
+      <li><a href="Videos.html">Videos</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Blog.html" class="active">Blog</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<section class="blog-hero">
+  <div class="blog-hero-overlay">
+    <h1>Blog</h1>
+  </div>
+</section>
+
+<section class="blog-section">
+
+  <div class="blog-card featured-card">
+    <h2>Messi’s Rise to Football Greatness</h2>
+    <p>
+      From Rosario to global superstardom, Lionel Messi’s journey is one of
+      talent, resilience, and unmatched football brilliance.
+    </p>
+    <a href="article.html" class="btn">Read More</a>
+  </div>
+
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="images/messi.jpg" alt="Messi">
+      <h3>Messi’s Early Years at Newell’s</h3>
+      <p>
+        Lionel Messi began his football journey at Newell’s Old Boys, where his
+        extraordinary talent was evident from a young age.
+      </p>
+      <a href="article.html" class="btn">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/messi.jpg" alt="Messi">
+      <h3>The La Masia Breakthrough</h3>
+      <p>
+        Barcelona’s decision to bring Messi to La Masia changed football history
+        forever, nurturing a future legend.
+      </p>
+      <a href="article.html" class="btn">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/messi.jpg" alt="Messi">
+      <h3>Dominating Europe with Barcelona</h3>
+      <p>
+        Messi led Barcelona to countless domestic and European trophies,
+        redefining greatness in modern football.
+      </p>
+      <a href="article.html" class="btn">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/messi.jpg" alt="Messi">
+      <h3>The Ballon d’Or King</h3>
+      <p>
+        With a record number of Ballon d’Or awards, Messi cemented his status as
+        one of the greatest players ever.
+      </p>
+      <a href="article.html" class="btn">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/messi.jpg" alt="Messi">
+      <h3>Paris Saint-Germain Chapter</h3>
+      <p>
+        Messi’s move to PSG marked a new era, bringing his magic to French
+        football and global audiences.
+      </p>
+      <a href="article.html" class="btn">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/messi.jpg" alt="Messi">
+      <h3>Inter Miami & MLS Impact</h3>
+      <p>
+        Messi’s arrival at Inter Miami transformed MLS, attracting worldwide
+        attention and raising the league’s profile.
+      </p>
+      <a href="article.html" class="btn">Read More</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <p>LIONEL MESSI © 2026</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="Personal Bio.html">Personal Bio</a>
+      <a href="References.html">References</a>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    document.body.classList.remove("dark");
+  } else {
+    document.body.classList.add("dark");
+  }
+</script>
+
+</body>
+</html>

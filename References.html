@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>References | Lionel Messi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+<nav class="navbar">
+  <div class="nav-container">
+
+    <div class="logo">LIONEL MESSI</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Brands.html">Brands</a></li>
+      <li><a href="Videos.html">Videos</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<section class="references-hero">
+  <div class="references-hero-overlay">
+    <h1>References</h1>
+  </div>
+</section>
+
+<section class="references-section">
+  <div class="references-container">
+
+    <div class="reference-block">
+      <h3>Images were obtained from:</h3>
+      <ul>
+        <li>
+          <a href="https://www.google.com" target="_blank">https://www.google.com</a>
+        </li>
+        <li>
+          <a href="https://www.messi.com" target="_blank">https://www.messi.com</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="reference-block">
+      <h3>Videos were obtained from:</h3>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="reference-block">
+      <h3>About text was obtained from:</h3>
+      <ul>
+        <li>
+          <a href="https://www.biography.com" target="_blank">https://www.biography.com</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="reference-block">
+      <h3>Contact form inspiration was obtained from:</h3>
+      <ul>
+        <li>
+          <a href="https://www.w3schools.com" target="_blank">https://www.w3schools.com</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <p>LIONEL MESSI © 2026</p>
+    </div>
+    <div class="footer-right">
+      <a href="Personal Bio.html">Personal Bio</a>
+      <a href="References.html">References</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    document.body.classList.remove("dark");
+  } else {
+    document.body.classList.add("dark");
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Lionel Messi</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark">
+
+<nav class="navbar">
+<div class="nav-container">
+
+<div class="logo">LIONEL MESSI</div>
+
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <ul class="nav-links">
+    <li><a href="Index.html">Home</a></li>
+    <li><a href="About.html" class="active">About</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Brands.html">Brands</a></li>
+    <li><a href="Videos.html">Videos</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Blog.html">Blog</a></li>
+  </ul>
+
+</div>
+</nav>
+
+<section class="about-hero">
+   <div class="about-hero-overlay">
+   <h1>About</h1>
+   </div>
+</section>
+
+<section class="about-story">
+   <h2>Lionel Messi’s Story</h2>
+
+<div class="about-rows">
+<div class="about-row">
+   <p>
+       Lionel Andrés "Leo" Messi (born 24 June 1987) is an Argentine professional footballer
+       who plays as a forward for and captains both Major League Soccer club Inter Miami and
+       the Argentina national team. Widely regarded as one of the greatest players in history,
+       Messi has won eight Ballon d'Or awards and is the most decorated player in football history.
+    </p>
+
+    <p>
+       Messi made his competitive debut for Barcelona at age 17 in 2004 and spent over 17 years
+       at the club, winning 34 trophies. After stints at Paris Saint-Germain, he joined Inter Miami
+       in 2023, leading the club to historic success and global attention.
+    </p>
+</div>
+
+<div class="about-row">
+    <p>
+       Internationally, Messi is Argentina’s all-time leading goal scorer. He won the Copa América
+       in 2021, the World Cup in 2022, and another Copa América in 2024. These achievements cemented
+       his legacy as one of football’s all-time greats.
+    </p>
+
+    <p>
+       Beyond football, Messi is a global icon, endorsing Adidas and appearing on Time’s list of
+       the world’s most influential people. His impact extends far beyond the pitch.
+    </p>
+</div>
+</div>
+</section>
+
+<section class="stats-section">
+<h2 class="stats-title">Messi’s Stats</h2>
+
+<div class="stats-grid">
+<div class="stat-card">
+<img src="images/about/goals.png" alt="Goals" class="stat-icon" />
+<p class="stat-label">Goals</p>
+<p class="stat-number">896</p>
+</div>
+
+<div class="stat-card">
+<img src="images/about/assists.png" alt="Assists" class="stat-icon" />
+<p class="stat-label">Assists</p>
+<p class="stat-number">409</p>
+</div>
+
+<div class="stat-card">
+<img src="images/about/ballon d'or.png" alt="Ballon d'Or" class="stat-icon" />
+<p class="stat-label">Ballon d’Or</p>
+<p class="stat-number">8</p>
+</div>
+
+<div class="stat-card">
+<img src="images/about/trophies.png" alt="Trophies" class="stat-icon" />
+<p class="stat-label">Trophies</p>
+<p class="stat-number">46</p>
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+     <div class="footer-container">
+
+     <div class="footer-left">
+     <p>LIONEL MESSI © 2026</p>
+     </div>
+
+    <div class="footer-right">
+    <a href="Personal Bio.html">Personal Bio</a>
+    <a href="References.html">References</a>
+    </div>
+
+     </div>
+</footer>
+
+
+<script>
+function toggleMenu() {
+document.querySelector(".nav-links").classList.toggle("active");
+}
+
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+document.body.classList.remove("dark");
+} else {
+document.body.classList.add("dark");
+}
+</script>
+
+</body>
+</html>
+
+
+

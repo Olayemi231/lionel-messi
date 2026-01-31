@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lionel Messi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark">
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">LIONEL MESSI</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+      <li><a href="Index.html" class="active">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="Brands.html">Brands</a></li>
+      <li><a href="Videos.html">Videos</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-container">
+
+    <div class="hero-text">
+      <p class="hero-subtitle">Football Player</p>
+
+      <h1 class="hero-title">
+        LIONEL<br />
+        MESSI
+      </h1>
+
+      <p class="hero-description">
+        Lionel Andrés “Leo” Messi is an Argentine professional footballer
+        widely regarded as one of the greatest players of all time.
+        He currently plays for Inter Miami and captains the Argentina
+        national team.
+      </p>
+
+      <div class="hero-buttons">
+        <button onclick="setLight()">Light Mode</button>
+        <button onclick="setDark()">Dark Mode</button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/messi-profile.png" alt="Lionel Messi" />
+    </div>
+  </div>
+</header>
+
+
+<section class="home-cards">
+  <a href="Videos.html" class="home-card">
+    <span>Highlights</span>
+  </a>
+
+  <a href="Brands.html" class="home-card">
+    <span>Brands</span>
+  </a>
+
+  <a href="Gallery.html" class="home-card">
+    <span>Gallery</span>
+  </a>
+</section>
+
+<section class="home-about">
+  <div class="home-about-container">
+
+    <div class="home-about-image">
+      <img src="images/messi-hero.png" alt="Lionel Messi" />
+    </div>
+
+    <div class="home-about-text">
+      <h2>About</h2>
+      <p>
+        Lionel Andrés Messi was born on June 24, 1987, in Rosario, Argentina.
+        His football talent became evident at a very young age. After moving
+        to Spain at 13, he joined FC Barcelona’s La Masia academy and rose to
+        become one of the greatest footballers in history.
+      </p>
+
+      <a href="About.html" class="btn-read-more">Read More</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="video-hero">
+  <video autoplay muted loop playsinline>
+    <source src="videos/messi-highlights.mp4" type="video/mp4" />
+  </video>
+
+  <div class="video-overlay">
+    <h1>Messi's Highlights</h1>
+    <p>Iconic goals, assists, and unforgettable moments</p>
+    <a href="Videos.html" class="btn">Watch More</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <p>LIONEL MESSI © 2026</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="Personal Bio.html">Personal Bio</a>
+      <a href="References.html">References</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function setDark() {
+    document.body.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
+
+  function setLight() {
+    document.body.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  }
+
+  function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    document.body.classList.remove("dark");
+  } else {
+    document.body.classList.add("dark");
+  }
+</script>
+</body>
+</html>
